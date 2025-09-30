@@ -3,30 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anastasiya <anastasiya@student.42.fr>      +#+  +:+       +#+        */
+/*   By: anklochk <anklochk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 17:44:57 by anastasiya        #+#    #+#             */
-/*   Updated: 2025/05/03 13:12:35 by anastasiya       ###   ########.fr       */
+/*   Updated: 2025/09/30 16:32:14 by anklochk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Write a program (main) in which the client takes two parameters/arguments
-
-// The PID of the server to which it wants to send the message
-
-// A message
-
-//              Encrypt the message (I did the encryption via bits)
-
-//              Send the message to the server (via its PID)
-
-//              Create a stop condition so that the server knows when it has finished receiving the message
-
 
 //Client — это тот, кто передаёт сообщение (твоё сообщение — это строка).
 //Он берёт каждый символ строки, разбивает его на 8 бит, 
 //и по каждому биту отправляет сигнал SIGUSR1 (если бит 0) или SIGUSR2 (если бит 1) серверу.
-
 
 #include <stdio.h>
 #include <unistd.h>
